@@ -1,5 +1,6 @@
 from flask import Flask, request, redirect, render_template_string, send_from_directory
 import mysql.connector
+import bcrypt
 
 app = Flask(__name__)
 
@@ -31,11 +32,17 @@ def login():
         username = request.form["username"]
         password = request.form["password"]
 
-        cursor.execute("SELECT * FROM users WHERE username=%s AND password=%s", (username, password))
+        cursor.execute("SELECT username, password FROM users WHERE username=%s", (username,))
         user = cursor.fetchone()
 
         if user:
-            return redirect(f"/homepage?username={username}")
+            stored_password = user[1].encode('utf-8')
+            password_bytes = password.encode('utf-8')
+            
+            if bcrypt.checkpw(password_bytes, stored_password):
+                return redirect(f"/homepage?username={username}")
+            else:
+                return "Identifiants incorrects"
         else:
             return "Identifiants incorrects"
     
@@ -47,8 +54,14 @@ def register():
     if request.method == "POST":
         username = request.form["username"]
         password = request.form["password"]
+        
+        password_bytes = password.encode('utf-8')
+        salt = bcrypt.gensalt()
+        hashed_password = bcrypt.hashpw(password_bytes, salt)
+        
+        hashed_password_str = hashed_password.decode('utf-8')
 
-        cursor.execute("INSERT INTO users (username, password) VALUES (%s, %s)", (username, password))
+        cursor.execute("INSERT INTO users (username, password) VALUES (%s, %s)", (username, hashed_password_str))
         db.commit()
         return "Utilisateur créé !"
     
