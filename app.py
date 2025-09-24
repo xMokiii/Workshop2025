@@ -1,7 +1,17 @@
-from flask import Flask, request, redirect, render_template_string
-import mysql.connector 
+from flask import Flask, request, redirect, render_template_string, send_from_directory
+import mysql.connector
 
 app = Flask(__name__)
+
+
+@app.route('/<path:filename>')
+def serve_static(filename):
+    if filename.endswith('.css'):
+        folder = filename.split('_')[0] if '_' in filename else 'static'
+    else:
+        folder = 'static'
+    
+    return send_from_directory(folder, filename)
 
 db = mysql.connector.connect(
     host="localhost",
@@ -29,7 +39,7 @@ def login():
         else:
             return "Identifiants incorrects"
     
-    with open('login/login.html', 'r', encoding='utf-8') as f:
+    with open('login/login.html') as f:
         return f.read()
 
 @app.route("/register", methods=["GET", "POST"])
@@ -42,7 +52,7 @@ def register():
         db.commit()
         return "Utilisateur créé !"
     
-    with open('register/register.html', 'r', encoding='utf-8') as f:
+    with open('register/register.html') as f:
         return f.read()
 
 @app.route("/homepage")
@@ -50,7 +60,7 @@ def homepage():
     username = request.args.get('username', 'Utilisateur')
     
     
-    with open('homepage/homepage.html', 'r', encoding='utf-8') as f:
+    with open('homepage/homepage.html') as f:
         content = f.read()
     
     

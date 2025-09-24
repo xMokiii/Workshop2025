@@ -9,10 +9,15 @@
 <body>
   <h1 class="title">Inscription</h1>
   <form action="/register" method="post">
+    <div class="welcome">
+      <div class="line line1">Bienvenue </div>
+      <div class="line line2">Entrez vos</div>
+      <div class="line line3">Informations.<span class="blink">_</span></div>
+    </div>
     <label>Identifiant :</label>
-    <input type="text" name="username" required><br><br>
+    <input type="text" name="username" required>
     <label>Mot de passe :</label>
-    <input type="password" name="password" required><br><br>
+    <input type="password" name="password" required>
     <button type="submit">S'inscrire</button>
   </form>
   <a href="/login">Se connecter</a>
