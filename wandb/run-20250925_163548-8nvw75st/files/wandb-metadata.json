@@ -1,0 +1,40 @@
+{
+  "os": "Windows-11-10.0.26100-SP0",
+  "python": "CPython 3.13.5",
+  "startedAt": "2025-09-25T14:35:48.379376Z",
+  "program": "c:\\Users\\morli\\Perso\\Workshop2025\\Model_IA.ipynb",
+  "codePath": "Model_IA.ipynb",
+  "codePathLocal": "Model_IA.ipynb",
+  "git": {
+    "remote": "https://github.com/xMokiii/Workshop2025.git",
+    "commit": "063a9a34421c1af5d0f000f5da90aba7de1e0121"
+  },
+  "email": "morlioncolin@gmail.com",
+  "root": "c:\\Users\\morli\\Perso\\Workshop2025",
+  "host": "ToasterEdition",
+  "executable": "c:\\Python313\\python.exe",
+  "cpu_count": 24,
+  "cpu_count_logical": 32,
+  "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1001563090944",
+      "used": "182832189440"
+    }
+  },
+  "memory": {
+    "total": "33986576384"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4090 Laptop GPU",
+      "memoryTotal": "17171480576",
+      "cudaCores": 9728,
+      "architecture": "Ada",
+      "uuid": "GPU-5b01b30e-7636-33af-082e-a6f178abd6c0"
+    }
+  ],
+  "cudaVersion": "12.4",
+  "writerId": "prtqnwdp2ff182jzs7bp4gfqtz58lp5d"
+}
