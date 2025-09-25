@@ -9,6 +9,9 @@ config.py
 *.sqlite
 *.sqlite3
 
+# Images uploadées
+uploads/
+
 # Fichiers Python
 __pycache__/
 *.py[cod]

@@ -125,3 +125,18 @@ video{
 #sendBtn:hover{
   transform: translateY(-2px);
 }
+
+#reloadBtn{
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  background: var(--color);
+  color: var(--color2);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#reloadBtn:hover{
+  transform: translateY(-2px);
+}
