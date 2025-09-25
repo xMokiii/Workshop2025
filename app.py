@@ -5,6 +5,10 @@ import bcrypt
 app = Flask(__name__)
 
 
+@app.route('/public/<path:filename>')
+def serve_public(filename):
+    return send_from_directory('public', filename)
+
 @app.route('/<path:filename>')
 def serve_static(filename):
     if filename.endswith('.css'):
