@@ -1,6 +1,8 @@
 from flask import Flask, request, redirect, session, Response, send_from_directory
 import mysql.connector
 import bcrypt
+from ai_model import detect_fruit
+from credit_system import add_credits, get_user_credits
 
 app = Flask(__name__)
 app.secret_key = 'Workshop2025-FlaskApp-SecretKey-'
@@ -32,6 +34,7 @@ db = mysql.connector.connect(
     database="ia_project"
 )
 cursor = db.cursor()
+
 #ICI CA SERT A REDIRIGER VERS LA PAGE DE LOGIN
 @app.route("/")
 def home():
@@ -99,11 +102,13 @@ def homepage():
         return redirect("/login")
     
     username = session.get('username', 'Utilisateur')
+    user_credits = get_user_credits(cursor, username)
     
     with open('homepage/homepage.html', encoding='utf-8') as f:
         content = f.read()
     
     content = content.replace('username', username)
+    content = content.replace('credit', f'{user_credits} crédits')
     
     return Response(content, mimetype='text/html; charset=utf-8')
 
@@ -112,6 +117,59 @@ def homepage():
 def logout():
     session.clear()
     return redirect("/login")
+
+@app.route("/upload", methods=["POST"])
+def analyze_image():
+    if not session.get('logged_in'):
+        return {"error": "Non autorisé"}, 401
+    
+    try:
+        print("Début de l'analyse d'image...")
+        data = request.get_json()
+        image_data = data.get('image')
+
+        if not image_data:
+            return {"error": "Aucune image fournie"}, 400
+        
+        #ICI CA SERT A SUPPRIMER LE PREFIXE data:image/png;base64,
+        if ',' in image_data:
+            image_data = image_data.split(',')[1]
+        
+        #ICI CA SERT A DECODER L'IMAGE BASE64
+        import base64
+        image_bytes = base64.b64decode(image_data)
+        
+        username = session.get('username', 'unknown')
+        print(f"Utilisateur: {username}")
+        
+        # ICI ON UTILISE LE MODEL IA
+        print("Analyse IA...")
+        ai_result = detect_fruit(image_bytes)
+        detected_fruit = ai_result["object"]
+        print(f"Fruit détecté: {detected_fruit}")
+        
+        #ICI CA SERT A AJOUTER DES CREDITS BASÉS SUR LE FRUIT DETECTÉ
+        print("Ajout des crédits...")
+        credit_info = add_credits(db, cursor, username, detected_fruit)
+        print(f"Crédits ajoutés: {credit_info}")
+        
+        return {
+            "success": True,
+            "message": f"Analyse terminée pour {username}",
+            "result": {
+                "object": detected_fruit,
+                "confidence": ai_result["confidence"],
+                "status": ai_result["status"],
+                "credits_earned": credit_info["credits_added"],
+                "total_credits": credit_info["total_credits"]
+            }
+        }
+        
+    except Exception as e:
+        print(f"ERREUR: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        return {"error": f"Erreur lors de l'analyse: {str(e)}"}, 500
 
 #ICI CA SERT A LANCER L'APPLICATION
 if __name__ == "__main__":
