@@ -4,57 +4,75 @@ const captureBtn = document.getElementById('scanBtn');
 const sendBtn = document.getElementById('sendBtn');
 let stream = null;
 
-const constraints = { video: true, audio: false };
-navigator.mediaDevices.getUserMedia(constraints)
-  .then((stream) => {
-    video.srcObject = stream;
-    captureBtn.disabled = false;
-  })
-  .catch ((err) => {
-    alert('Impossible d’accéder à la caméra : ' + err.message);
-    console.error(err);
-  });
+document.addEventListener('DOMContentLoaded', function() {
+    
+    const constraints = { video: true, audio: false };
+    
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia(constraints)
+            .then((mediaStream) => {
+                stream = mediaStream;
+                video.srcObject = stream;
+                video.play();
+                captureBtn.disabled = false;
+            })
+            .catch((err) => {
+                console.error('Erreur caméra:', err);
+                alert('Impossible d\'accéder à la caméra : ' + err.message);
+            });
+    } else {
+        console.error('getUserMedia non supporté');
+        alert('Votre navigateur ne supporte pas l\'accès à la caméra');
+    }
+});
 
 
 captureBtn.addEventListener('click', () => {
-  // réglage canvas sur la taille vidéo réelle
-  const w = video.videoWidth;
-  const h = video.videoHeight;
-  canvas.width = w;
-  canvas.height = h;
-  const ctx = canvas.getContext('2d');
-  video.style.display = 'none';
-  // flip horizontal si selfie souhaité : ctx.translate(w,0); ctx.scale(-1,1);
-  ctx.drawImage(video, 0, 0, w, h);
+    
+    if (!video.videoWidth || !video.videoHeight) {
+        alert('La vidéo n\'est pas encore prête');
+        return;
+    }
+    
+    const w = video.videoWidth;
+    const h = video.videoHeight;
+    canvas.width = w;
+    canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    
+    video.style.display = 'none';
+    ctx.drawImage(video, 0, 0, w, h);
 
-  // obtenir dataURL (PNG) et proposer le téléchargement
-  const dataUrl = canvas.toDataURL('image/png');
-  // captureBtn.href = dataUrl;
-  // captureBtn.download = 'capture.png';
-  canvas.style.display = 'inline';
-  sendBtn.style.display = 'inline';
-  document.querySelector(".output").style.display="none";
-  sendBtn.addEventListener('click', () => {
-    if (!dataUrl) {
+    const dataUrl = canvas.toDataURL('image/png');
+    canvas.style.display = 'inline';
+    sendBtn.style.display = 'inline';
+    document.querySelector(".output").style.display = "none";
+    
+});
+
+sendBtn.addEventListener('click', () => {
+    
+    const canvas = document.getElementById('canvas');
+    if (!canvas || canvas.width === 0) {
         console.error("Aucune photo capturée.");
         return;
-    } else {
-        fetch('/upload', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ image: dataUrl }),
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log("Réponse du serveur :", data);
-        })
-        .catch(error => {
-            console.error("Erreur lors de l'envoi :", error);
-        });
     }
-  });
+    
+    const dataUrl = canvas.toDataURL('image/png');
+    
+    fetch('/upload', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ image: dataUrl }),
+    })
+    .then(response => response.json())
+    .then(data => {
+    })
+    .catch(error => {
+        console.error("Erreur lors de l'envoi :", error);
+    });
 });
 
 // libérer la caméra (optionnel)
