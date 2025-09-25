@@ -1,0 +1,64 @@
+body{
+    display:flex;
+    background: linear-gradient(60deg,rgb(123, 203, 238),rgb(190, 214, 238));
+}
+.profil{
+    width:20%;
+    display:flex;
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+
+.profilPic{
+    width:100px;
+    height:100px;
+}
+.info{
+    padding: 0 2rem 0 0;
+}
+#scanBtn{
+    padding: 0.5rem 1rem;
+    background-color: rgb(209, 210, 211);
+    font-weight:500;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    box-shadow: 3px 3px black;
+    text-decoration: none;
+    color:black;
+}
+.btnContainer{
+    margin: 1rem 0 2rem 0;
+
+}
+.camera{
+    margin-top: 4rem;
+    width:60%;
+    height: 100%;
+    background-color: grey;
+    text-align: center;
+}
+#canvas{
+    height:23rem;
+    width: 80%;
+}
+/* .image>p{
+    border: 1px solid black;
+} */
+video{
+    /* margin: 4rem 0 0 0; */
+    height:23rem;
+    width: 80%;
+    background-color: black;
+}
+.objet{
+    padding-top: 1rem;
+}
+.market{
+    width:20%;
+    text-align: right;
+    padding:2rem 5rem 0  0;
+}
+#sendBtn{
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
