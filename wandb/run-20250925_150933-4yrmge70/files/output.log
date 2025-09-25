@@ -1,0 +1,48 @@
+✅ WandB initialized successfully!
+🔗 Project: fruit-classifier-2025
+🏷️ Run name: resilient-jazz-2
+🌐 Dashboard: https://wandb.ai/mokiii-epsi/fruit-classifier-2025/runs/4yrmge70
+Loading datasets...
+Found 2054 files belonging to 4 classes.
+Using 1644 files for training.
+Found 2054 files belonging to 4 classes.
+Using 410 files for validation.
+Classes: ['Apple', 'Banana', 'Carrot', 'Coconut'] (4 classes)
+Train batches: 52, Val batches: 13
+Preprocessing applied
+Initial accuracy: 65.6% (should be ~25.0%)
+✅ WandB run active: resilient-jazz-2
+Starting training with WandB logging...
+Epoch 1/30
+52/52 - 13s - 259ms/step - accuracy: 0.5675 - loss: 1.0444 - val_accuracy: 0.9634 - val_loss: 0.3648 - learning_rate: 1.0000e-03
+Epoch 2/30
+52/52 - 12s - 234ms/step - accuracy: 0.8613 - loss: 0.4247 - val_accuracy: 0.9244 - val_loss: 0.3452 - learning_rate: 1.0000e-03
+Epoch 3/30
+52/52 - 12s - 234ms/step - accuracy: 0.9130 - loss: 0.2854 - val_accuracy: 0.9610 - val_loss: 0.2704 - learning_rate: 1.0000e-03
+Epoch 4/30
+52/52 - 12s - 229ms/step - accuracy: 0.9161 - loss: 0.2424 - val_accuracy: 0.9122 - val_loss: 0.3244 - learning_rate: 1.0000e-03
+Epoch 5/30
+52/52 - 12s - 234ms/step - accuracy: 0.9319 - loss: 0.2307 - val_accuracy: 0.9805 - val_loss: 0.0943 - learning_rate: 1.0000e-03
+Epoch 6/30
+52/52 - 12s - 226ms/step - accuracy: 0.9270 - loss: 0.2324 - val_accuracy: 0.9244 - val_loss: 0.2992 - learning_rate: 1.0000e-03
+Epoch 7/30
+52/52 - 11s - 220ms/step - accuracy: 0.9349 - loss: 0.2194 - val_accuracy: 0.9732 - val_loss: 0.1047 - learning_rate: 1.0000e-03
+Epoch 8/30
+52/52 - 11s - 221ms/step - accuracy: 0.9422 - loss: 0.1806 - val_accuracy: 0.9268 - val_loss: 0.2533 - learning_rate: 1.0000e-03
+Epoch 9/30
+52/52 - 12s - 229ms/step - accuracy: 0.9599 - loss: 0.1404 - val_accuracy: 0.9829 - val_loss: 0.0844 - learning_rate: 2.0000e-04
+Epoch 10/30
+52/52 - 13s - 241ms/step - accuracy: 0.9592 - loss: 0.1199 - val_accuracy: 0.9585 - val_loss: 0.1484 - learning_rate: 2.0000e-04
+Epoch 11/30
+52/52 - 14s - 264ms/step - accuracy: 0.9580 - loss: 0.1140 - val_accuracy: 0.9951 - val_loss: 0.0553 - learning_rate: 2.0000e-04
+Epoch 12/30
+52/52 - 16s - 303ms/step - accuracy: 0.9653 - loss: 0.1151 - val_accuracy: 0.9585 - val_loss: 0.1533 - learning_rate: 2.0000e-04
+Epoch 13/30
+52/52 - 14s - 262ms/step - accuracy: 0.9641 - loss: 0.1088 - val_accuracy: 0.9732 - val_loss: 0.0977 - learning_rate: 2.0000e-04
+Epoch 14/30
+52/52 - 13s - 245ms/step - accuracy: 0.9641 - loss: 0.1080 - val_accuracy: 0.9976 - val_loss: 0.0519 - learning_rate: 2.0000e-04
+Epoch 15/30
+52/52 - 12s - 231ms/step - accuracy: 0.9641 - loss: 0.1023 - val_accuracy: 0.9878 - val_loss: 0.0829 - learning_rate: 2.0000e-04
+Epoch 16/30
+52/52 - 12s - 234ms/step - accuracy: 0.9629 - loss: 0.1023 - val_accuracy: 0.9683 - val_loss: 0.1013 - learning_rate: 2.0000e-04
+Epoch 17/30

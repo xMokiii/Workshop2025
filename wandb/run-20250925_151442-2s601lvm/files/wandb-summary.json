@@ -1,0 +1,1 @@
+{"num_classes":4,"val_batches":13,"_wandb":{"runtime":15},"epoch/val_loss":0.1142200157046318,"epoch/epoch":8,"_runtime":15,"_step":9,"epoch/val_accuracy":0.9853658676147461,"train_batches":52,"_timestamp":1.7588061897132473e+09,"epoch/accuracy":0.9604622721672058,"epoch/learning_rate":0.00020000000949949026,"epoch/loss":0.1124916523694992}

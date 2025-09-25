@@ -1,0 +1,33 @@
+2025-09-25 16:49:16,851 INFO    Thread-1304 (_run_job):27444 [wandb_setup.py:_flush():81] Current SDK version is 0.22.0
+2025-09-25 16:49:16,851 INFO    Thread-1304 (_run_job):27444 [wandb_setup.py:_flush():81] Configure stats pid to 27444
+2025-09-25 16:49:16,851 INFO    Thread-1304 (_run_job):27444 [wandb_setup.py:_flush():81] Loading settings from C:\Users\morli\.config\wandb\settings
+2025-09-25 16:49:16,851 INFO    Thread-1304 (_run_job):27444 [wandb_setup.py:_flush():81] Loading settings from c:\Users\morli\Perso\Workshop2025\wandb\settings
+2025-09-25 16:49:16,852 INFO    Thread-1304 (_run_job):27444 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-09-25 16:49:16,852 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:setup_run_log_directory():686] Logging user logs to c:\Users\morli\Perso\Workshop2025\wandb\run-20250925_164916-yb61tiuy\logs\debug.log
+2025-09-25 16:49:16,854 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to c:\Users\morli\Perso\Workshop2025\wandb\run-20250925_164916-yb61tiuy\logs\debug-internal.log
+2025-09-25 16:49:16,855 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:monkeypatch_ipython():605] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000002A012F9E030>
+2025-09-25 16:49:16,855 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:init():813] calling init triggers
+2025-09-25 16:49:16,855 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:init():818] wandb.init called with sweep_config: {'batch_size': 32, 'conv_filters': [32, 64, 128], 'dropout_rate': 0.38079552856513565, 'epochs': 20, 'fc_layer_size': 128, 'learning_rate': 0.0011127076634583964, 'optimizer': 'adam'}
+config: {'_wandb': {}}
+2025-09-25 16:49:16,855 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:init():861] starting backend
+2025-09-25 16:49:19,111 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:init():864] sending inform_init request
+2025-09-25 16:49:19,115 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:init():872] backend started and connected
+2025-09-25 16:49:19,119 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_config_callback():1392] config_cb None None {'batch_size': 32, 'conv_filters': [32, 64, 128], 'dropout_rate': 0.38079552856513565, 'epochs': 20, 'fc_layer_size': 128, 'learning_rate': 0.0011127076634583964, 'optimizer': 'adam'}
+2025-09-25 16:49:19,120 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_label_probe_notebook():1330] probe notebook
+2025-09-25 16:49:19,122 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_label_probe_notebook():1340] Unable to probe notebook: 'charmap' codec can't decode byte 0x8f in position 5363: character maps to <undefined>
+2025-09-25 16:49:19,122 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:init():942] updated telemetry
+2025-09-25 16:49:19,168 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:init():966] communicating run to backend with 90.0 second timeout
+2025-09-25 16:49:19,604 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:init():1017] starting run threads in backend
+2025-09-25 16:49:19,827 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_console_start():2506] atexit reg
+2025-09-25 16:49:19,828 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2025-09-25 16:49:19,828 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2025-09-25 16:49:19,829 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_redirect():2446] Redirects installed.
+2025-09-25 16:49:19,830 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:init():1057] run started, returning control to user process
+2025-09-25 16:58:39,345 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_finish():2272] finishing run mokiii-epsi/cnn-image-classifier/yb61tiuy
+2025-09-25 16:58:39,345 INFO    Thread-1304 (_run_job):27444 [jupyter.py:save_history():480] not saving jupyter history
+2025-09-25 16:58:39,345 INFO    Thread-1304 (_run_job):27444 [jupyter.py:save_ipynb():404] not saving jupyter notebook
+2025-09-25 16:58:39,345 INFO    Thread-1304 (_run_job):27444 [wandb_init.py:_jupyter_teardown():590] cleaning up jupyter logic
+2025-09-25 16:58:39,345 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_atexit_cleanup():2471] got exitcode: 0
+2025-09-25 16:58:39,346 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_restore():2453] restore
+2025-09-25 16:58:39,346 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_restore():2459] restore done
+2025-09-25 16:58:40,234 INFO    Thread-1304 (_run_job):27444 [wandb_run.py:_footer_sync_info():3867] logging synced files
