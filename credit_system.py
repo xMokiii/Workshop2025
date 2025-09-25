@@ -19,9 +19,7 @@ def add_credits(db, cursor, username, fruit_detected):
         'Pomme': 2,
         'Banane': 1,
         'Carotte': 3,
-        'Tomate': 2,
-        'Coco': 5,
-        'Pomme de terre': 1
+        'Coco': 5
     }
     
     try:
