@@ -10,4 +10,5 @@ dependencies:
       - notebook==7.4.5
       - tensorflow==2.20.0
       - wandb==0.22.0
+      - pandas==2.3.2
 prefix: C:\Users\morli\anaconda3\envs\mycnn-env
