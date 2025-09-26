@@ -1,13 +1,16 @@
 name: mycnn-env
 channels:
-  - defaults
+  
+defaults
 dependencies:
-  - python=3.10.18
-  - pip=25.2
-  - pip:
-      - numpy==2.2.6
-      - matplotlib==3.10.6
-      - notebook==7.4.5
-      - tensorflow==2.20.0
-      - wandb==0.22.0
-prefix: C:\Users\morli\anaconda3\envs\mycnn-env
+  
+python=3.10.18
+pip=25.2
+pip:
+numpy==2.2.6
+bcrypt==4.3.0
+mysql.connector==9.4.0
+matplotlib==3.10.6
+notebook==7.4.5
+tensorflow==2.20.0
+wandb==0.22.
