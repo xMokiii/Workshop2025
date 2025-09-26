@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login_style.css">
+  <title>Login</title>
+</head>
+<body>
+  <h1 class="title">Connexion</h1>
+  <form action="/login" method="post">
+    <div class="welcome">
+      <div class="line line1">Bienvenue</div>
+      <div class="line line2">Entrez vos</div>
+      <div class="line line3">informations.<span class="blink">_</span></div>
+    </div>
+    <label>Identifiant :</label>
+    <input type="text" name="username" required>
+    <label>Mot de passe :</label>
+    <input type="password" name="password" required>
+    <button type="submit">Se connecter</button>
+  </form>
+  <a href="/register">S'inscrire</a>
+</body>
+</html>

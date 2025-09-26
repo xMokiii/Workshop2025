@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+*{
+   font-family: 'Press Start 2P', cursive;
+}
+:root {
+  --color: #1b1b1b;
+  --color2: #ecf6ec;
+}
+body{
+  display:flex;
+  background: var(--color);
+  min-height: 100vh;
+}
+.profil{
+  width:20%;
+  display:flex;
+  flex-direction: column;
+  margin: 2rem 0 0 0;
+  text-align: center;
+  background: var(--color);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.profilPic{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  border: 3px solid var(--color2);
+  margin: 0 auto;
+}
+.info{
+  padding: 0.5rem 0;
+  color: var(--color2);
+}
+.info h2{
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.logout-container{
+  margin-top: 1rem;
+}
+.logout-btn{
+  padding: 0.5rem 1rem;
+  background-color: #ff4444;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.logout-btn:hover{
+  background-color: #cc3333;
+}
+#scanBtn{
+  padding: 0.5rem 1rem;
+  background-color: rgb(209, 210, 211);
+  font-weight:500;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  box-shadow: 3px 3px black;
+  text-decoration: none;
+  color:black;
+}
+.btnContainer{
+  margin: 1rem 0 2rem 0;
+
+}
+.camera{
+  margin-top: 2rem;
+  width:60%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+.camera p {
+  color: var(--color2);
+}
+#canvas{
+  height:23rem;
+  width: 80%;
+}
+video{
+  height:23rem;
+  width: 80%;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.objet{
+  padding-top: 1rem;
+}
+.market{
+  width:20%;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+.market img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+#sendBtn{
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  background: var(--color);
+  color: var(--color2);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#sendBtn:hover{
+  transform: translateY(-2px);
+}
+
+#reloadBtn{
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  background: var(--color);
+  color: var(--color2);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#reloadBtn:hover{
+  transform: translateY(-2px);
+}

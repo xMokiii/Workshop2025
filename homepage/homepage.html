@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="homepage_style.css" />
+</head>
+<body>
+    <section class="profil">
+        <div>
+            <img class="profilPic" src="/public/user-picture.png" alt="profilpic"/>
+        </div>
+        <div class="info">
+            <h2 class="usern">username</h2>
+            <h2 class="credit">credit</h2>
+        </div>
+        <div class="logout-container">
+            <a href="/logout" class="logout-btn">Se déconnecter</a>
+        </div>
+    </section>
+    <section class="camera">
+        <div class="btnContainer">
+            <a href="#" id="scanBtn">Cliquez pour scanner</a>
+        </div>
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas" style="display:none"> </canvas>
+        <p class="output">L'image capturée sera affichée dans cette boîte.</p>
+        <p class="objet">objet/valeur</p>
+        <button id="sendBtn" style="display:none">Valider</button>
+        <button id="reloadBtn" style="display:none">Relancer la caméra</button>
+    </section>
+    <section class="market">
+        <a href="#"><img src="/public/logo.jpg" alt="Market"/></a>
+    </section>
+    
+</body>
+<script src="script.js"></script>
+</html>

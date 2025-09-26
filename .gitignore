@@ -1,0 +1,72 @@
+# Fichiers de configuration sensibles
+config.py
+.env
+.env.local
+.env.production
+
+# Base de données
+*.db
+*.sqlite
+*.sqlite3
+
+# Images uploadées
+uploads/
+
+# Fichiers Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environnements virtuels
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Fichiers temporaires
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Modèles IA (si volumineux)
+*.h5
+*.pkl
+*.joblib
+
+# Fichiers de cache
+.cache/
+.pytest_cache/
+
+# Fichiers de configuration système
+*.ini
+config.ini

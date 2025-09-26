@@ -1,0 +1,20 @@
+wandb_version: 1
+
+batch_size:
+  value: 32
+conv_filters:
+  value:
+  - 32
+  - 64
+  - 128
+  - 256
+dropout_rate:
+  value: 0.31174667034052966
+epochs:
+  value: 20
+fc_layer_size:
+  value: 256
+learning_rate:
+  value: 0.003078599341462546
+optimizer:
+  value: rmsprop

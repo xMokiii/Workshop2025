@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+*{
+   font-family: 'Press Start 2P', cursive;
+}
+
+:root {
+   --color: #54FE55;
+   --color2: #1a4f1a;
+   --glowSize: 10px;
+}
+
+html,
+body{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: black;
+   flex-direction: column;
+   color: var(--color);
+}
+
+*::selection { 
+   background: var(--color2)
+}
+.welcome {
+  margin-bottom: 2rem;
+}
+.welcome .line {
+   overflow: hidden;
+   width: 0px;
+   text-shadow: 0px 0px var(--glowSize) var(--color);
+   height: 1rem;
+   text-align: left;
+}
+
+.welcome .line1 {
+   animation: type .5s 1s steps(20, end) forwards;
+}
+
+.welcome .line2 {
+   animation: type .5s 1.5s steps(20, end) forwards;
+}
+
+.welcome .line3 {
+   animation: type .5s 2s steps(20, end) forwards;
+}
+@keyframes type {
+  to {
+    width: 280px;
+  }
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+   max-width: 300px;
+}
+
+form label{
+   margin-bottom: 1rem;
+   display: flex;
+   flex-direction: column;
+   text-shadow: 0px 0px var(--glowSize) var(--color);
+}
+
+form input {
+   background: black;
+   border: 1px solid var(--color);
+   margin-top:.5rem;
+   padding: .5rem;
+   color: var(--color);
+   text-shadow: 0px 0px var(--glowSize) var(--color);
+   box-shadow: 0px 0px 5px var(--color);
+}
+
+form input:focus{
+   outline: none;
+}
+
+form button {
+   padding: .5rem;
+   background: #1a4f1a;
+   color: var(--color);
+   border: 0;
+   text-shadow: 0px 0px var(--glowSize) var(--color);
+   box-shadow: 0px 0px var(--glowSize) var(--color2);
+   cursor: pointer;
+}
+
+form button:focus{
+   outline: none;
+}
+
+h1.title {
+   text-shadow: 0px 0px var(--glowSize) var(--color);
+   margin-bottom: 2rem;
+}
+
+a {
+   color: var(--color);
+   text-decoration: none;
+   text-shadow: 0px 0px var(--glowSize) var(--color);
+   margin-top: 1rem;
+}
+
+a:hover {
+   text-shadow: 0px 0px calc(var(--glowSize) * 1.5) var(--color);
+}
+
+@keyframes blink {
+    0%   {opacity: 0}
+    49%  {opacity: 0}
+    50%  {opacity: 1}
+    100% {opacity: 1}
+}
+
+.blink {
+   animation-name: blink;
+    animation-duration: 1s;
+   animation-iteration-count: infinite;
+}
+
+.success-message {
+   color: var(--color);
+   text-shadow: 0px 0px var(--glowSize) var(--color);
+   margin: 1rem 0;
+   text-align: center;
+   font-size: 0.8rem;
+}
