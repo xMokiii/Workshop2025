@@ -1,0 +1,28 @@
+Training with config: {'batch_size': 16, 'conv_filters': [8, 16, 32, 64], 'dropout_rate': 0.46402172340174097, 'epochs': 20, 'fc_layer_size': 128, 'learning_rate': 0.0002947559511082836, 'optimizer': 'adam'}
+Found 2054 files belonging to 4 classes.
+Using 1438 files for training.
+Found 2054 files belonging to 4 classes.
+Using 616 files for validation.
+Epoch 1/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 14s 108ms/step - accuracy: 0.4416 - loss: 1.1594 - val_accuracy: 0.6737 - val_loss: 0.8813
+Epoch 2/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 9s 87ms/step - accuracy: 0.7107 - loss: 0.7152 - val_accuracy: 0.8604 - val_loss: 0.4802
+Epoch 3/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 9s 83ms/step - accuracy: 0.8296 - loss: 0.4966 - val_accuracy: 0.5925 - val_loss: 0.8790
+Epoch 4/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 9s 81ms/step - accuracy: 0.8637 - loss: 0.4129 - val_accuracy: 0.9643 - val_loss: 0.1652
+Epoch 5/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 10s 91ms/step - accuracy: 0.9089 - loss: 0.3048 - val_accuracy: 0.9773 - val_loss: 0.0960
+Epoch 6/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 10s 93ms/step - accuracy: 0.9082 - loss: 0.2742 - val_accuracy: 0.9367 - val_loss: 0.2473
+Epoch 7/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 9s 80ms/step - accuracy: 0.9277 - loss: 0.2460 - val_accuracy: 0.9367 - val_loss: 0.2491
+Epoch 8/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 9s 78ms/step - accuracy: 0.9346 - loss: 0.2181 - val_accuracy: 0.9692 - val_loss: 0.1360
+Epoch 9/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 13s 118ms/step - accuracy: 0.9346 - loss: 0.2141 - val_accuracy: 0.9481 - val_loss: 0.2119
+Epoch 10/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 10s 84ms/step - accuracy: 0.9402 - loss: 0.1910 - val_accuracy: 0.9627 - val_loss: 0.1362
+Epoch 10: early stopping
+Restoring model weights from the end of the best epoch: 5.
+Final validation accuracy: 0.9773

@@ -1,0 +1,47 @@
+Training with config: {'batch_size': 16, 'conv_filters': [24, 24, 24, 24], 'dropout_rate': 0.3528493053828972, 'epochs': 20, 'fc_layer_size': 128, 'learning_rate': 0.001397906449649352, 'optimizer': 'adam'}
+Found 2054 files belonging to 4 classes.
+Using 1438 files for training.
+Found 2054 files belonging to 4 classes.
+Using 616 files for validation.
+Epoch 1/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 15s 119ms/step - accuracy: 0.5104 - loss: 1.0052 - val_accuracy: 0.7873 - val_loss: 0.4202
+Epoch 2/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 15s 145ms/step - accuracy: 0.7149 - loss: 0.6550 - val_accuracy: 0.9610 - val_loss: 0.2381
+Epoch 3/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 15s 144ms/step - accuracy: 0.8268 - loss: 0.4436 - val_accuracy: 0.9529 - val_loss: 0.1682
+Epoch 4/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 14s 134ms/step - accuracy: 0.9096 - loss: 0.2922 - val_accuracy: 0.9675 - val_loss: 0.1522
+Epoch 5/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 18s 173ms/step - accuracy: 0.9159 - loss: 0.2806 - val_accuracy: 0.6802 - val_loss: 0.7978
+Epoch 6/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 15s 142ms/step - accuracy: 0.9221 - loss: 0.2525 - val_accuracy: 0.7549 - val_loss: 0.8180
+Epoch 7/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 19s 126ms/step - accuracy: 0.9339 - loss: 0.2101 - val_accuracy: 0.9740 - val_loss: 0.0993
+Epoch 8/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 20s 121ms/step - accuracy: 0.9277 - loss: 0.2047 - val_accuracy: 0.9643 - val_loss: 0.1269
+Epoch 9/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 13s 126ms/step - accuracy: 0.9242 - loss: 0.2257 - val_accuracy: 0.9643 - val_loss: 0.1329
+Epoch 10/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 14s 135ms/step - accuracy: 0.9409 - loss: 0.1904 - val_accuracy: 0.9188 - val_loss: 0.2632
+Epoch 11/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 14s 134ms/step - accuracy: 0.9409 - loss: 0.1890 - val_accuracy: 0.9692 - val_loss: 0.0971
+Epoch 12/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 15s 149ms/step - accuracy: 0.9458 - loss: 0.1697 - val_accuracy: 0.9789 - val_loss: 0.1058
+Epoch 13/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 14s 142ms/step - accuracy: 0.9513 - loss: 0.1709 - val_accuracy: 0.9627 - val_loss: 0.1443
+Epoch 14/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 15s 149ms/step - accuracy: 0.9569 - loss: 0.1502 - val_accuracy: 0.9529 - val_loss: 0.1828
+Epoch 15/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 15s 150ms/step - accuracy: 0.9541 - loss: 0.1534 - val_accuracy: 0.9708 - val_loss: 0.1066
+Epoch 16/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 15s 145ms/step - accuracy: 0.9478 - loss: 0.1837 - val_accuracy: 0.9805 - val_loss: 0.1053
+Epoch 17/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 13s 123ms/step - accuracy: 0.9437 - loss: 0.1793 - val_accuracy: 0.9789 - val_loss: 0.0681
+Epoch 18/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 14s 135ms/step - accuracy: 0.9513 - loss: 0.1380 - val_accuracy: 0.9838 - val_loss: 0.0614
+Epoch 19/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 14s 130ms/step - accuracy: 0.9562 - loss: 0.1374 - val_accuracy: 0.9740 - val_loss: 0.0867
+Epoch 20/20
+90/90 ━━━━━━━━━━━━━━━━━━━━ 13s 130ms/step - accuracy: 0.9576 - loss: 0.1330 - val_accuracy: 0.9854 - val_loss: 0.0606
+Restoring model weights from the end of the best epoch: 20.
+Final validation accuracy: 0.9854

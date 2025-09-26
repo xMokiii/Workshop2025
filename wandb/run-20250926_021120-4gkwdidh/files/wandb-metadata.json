@@ -1,0 +1,40 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.10.18",
+  "startedAt": "2025-09-26T00:11:20.347646Z",
+  "program": "d:\\Users\\Morlion\\Workshop2025\\Model_IA.ipynb",
+  "codePath": "Model_IA.ipynb",
+  "codePathLocal": "Model_IA.ipynb",
+  "git": {
+    "remote": "https://github.com/xMokiii/Workshop2025.git",
+    "commit": "f1f506f82da7bf2ecbaf2ec4bdb640e5bfba569b"
+  },
+  "email": "morlioncolin@gmail.com",
+  "root": "d:\\Users\\Morlion\\Workshop2025",
+  "host": "Benoit",
+  "executable": "c:\\Users\\Morlion\\anaconda3\\envs\\mycnn-env\\python.exe",
+  "cpu_count": 6,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA GeForce RTX 2060",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "1000186310656",
+      "used": "195531829248"
+    }
+  },
+  "memory": {
+    "total": "17126817792"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 2060",
+      "memoryTotal": "6442450944",
+      "cudaCores": 1920,
+      "architecture": "Turing",
+      "uuid": "GPU-c438d479-7db7-9d15-99a7-4fb0a237dfee"
+    }
+  ],
+  "cudaVersion": "12.9",
+  "writerId": "lpx8m94567ncju035wax84as1sxudogz"
+}
