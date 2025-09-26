@@ -1,0 +1,76 @@
+_wandb:
+    value:
+        cli_version: 0.22.0
+        e:
+            prtqnwdp2ff182jzs7bp4gfqtz58lp5d:
+                codePath: Model_IA.ipynb
+                codePathLocal: Model_IA.ipynb
+                cpu_count: 24
+                cpu_count_logical: 32
+                cudaVersion: "12.4"
+                disk:
+                    /:
+                        total: "1001563090944"
+                        used: "182832189440"
+                email: morlioncolin@gmail.com
+                executable: c:\Python313\python.exe
+                git:
+                    commit: 063a9a34421c1af5d0f000f5da90aba7de1e0121
+                    remote: https://github.com/xMokiii/Workshop2025.git
+                gpu: NVIDIA GeForce RTX 4090 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 9728
+                      memoryTotal: "17171480576"
+                      name: NVIDIA GeForce RTX 4090 Laptop GPU
+                      uuid: GPU-5b01b30e-7636-33af-082e-a6f178abd6c0
+                host: ToasterEdition
+                memory:
+                    total: "33986576384"
+                os: Windows-11-10.0.26100-SP0
+                program: c:\Users\morli\Perso\Workshop2025\Model_IA.ipynb
+                python: CPython 3.13.5
+                root: c:\Users\morli\Perso\Workshop2025
+                startedAt: "2025-09-25T14:35:48.379376Z"
+                writerId: prtqnwdp2ff182jzs7bp4gfqtz58lp5d
+        m: []
+        python_version: 3.13.5
+        t:
+            "1":
+                - 2
+                - 3
+            "2":
+                - 2
+                - 3
+            "3":
+                - 2
+                - 3
+                - 8
+                - 14
+            "4": 3.13.5
+            "5": 0.22.0
+            "8":
+                - 1
+                - 3
+            "10":
+                - 17
+            "12": 0.22.0
+            "13": windows-amd64
+batch_size:
+    value: 32
+conv_filters:
+    value:
+        - 32
+        - 64
+        - 128
+dropout_rate:
+    value: 0.6289926784036886
+epochs:
+    value: 20
+fc_layer_size:
+    value: 128
+learning_rate:
+    value: 0.0005022812750659347
+optimizer:
+    value: adam

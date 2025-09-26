@@ -1,0 +1,60 @@
+✅ WandB initialized!
+Loading datasets...
+Found 2054 files belonging to 4 classes.
+Using 1644 files for training.
+Found 2054 files belonging to 4 classes.
+Using 410 files for validation.
+Classes: ['Apple', 'Banana', 'Carrot', 'Coconut'] (4 classes)
+Train batches: 52, Val batches: 13
+Preprocessing applied
+Initial accuracy: 79.8% (should be ~25.0%)
+wandb: WARNING When using `save_best_only`, ensure that the `filepath` argument contains formatting placeholders like `{epoch:02d}` or `{batch:02d}`. This ensures correct interpretation of the logged artifacts.
+Starting training with WandB logging...
+Epoch 1/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 14s 238ms/step - accuracy: 0.6843 - loss: 0.7886 - val_accuracy: 0.6024 - val_loss: 1.0982 - learning_rate: 0.0010
+Epoch 2/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 14s 244ms/step - accuracy: 0.8875 - loss: 0.3255 - val_accuracy: 0.9049 - val_loss: 0.3035 - learning_rate: 0.0010
+Epoch 3/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 226ms/step - accuracy: 0.9294 - loss: 0.2345 - val_accuracy: 0.9854 - val_loss: 0.0622 - learning_rate: 0.0010
+Epoch 4/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 226ms/step - accuracy: 0.9294 - loss: 0.2250 - val_accuracy: 0.9512 - val_loss: 0.1628 - learning_rate: 0.0010
+Epoch 5/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 12s 221ms/step - accuracy: 0.9459 - loss: 0.1699 - val_accuracy: 0.9756 - val_loss: 0.0927 - learning_rate: 0.0010
+Epoch 6/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 234ms/step - accuracy: 0.9446 - loss: 0.1651 - val_accuracy: 0.9829 - val_loss: 0.0618 - learning_rate: 0.0010
+Epoch 7/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 236ms/step - accuracy: 0.9440 - loss: 0.1796 - val_accuracy: 0.9341 - val_loss: 0.1979 - learning_rate: 0.0010
+Epoch 8/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 227ms/step - accuracy: 0.9392 - loss: 0.1851 - val_accuracy: 0.9634 - val_loss: 0.1443 - learning_rate: 0.0010
+Epoch 9/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 0s 198ms/step - accuracy: 0.9651 - loss: 0.1392
+Epoch 9: ReduceLROnPlateau reducing learning rate to 0.00020000000949949026.
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 226ms/step - accuracy: 0.9592 - loss: 0.1418 - val_accuracy: 0.9390 - val_loss: 0.1986 - learning_rate: 0.0010
+Epoch 10/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 223ms/step - accuracy: 0.9678 - loss: 0.1041 - val_accuracy: 0.9951 - val_loss: 0.0714 - learning_rate: 2.0000e-04
+Epoch 11/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 235ms/step - accuracy: 0.9684 - loss: 0.1007 - val_accuracy: 0.9805 - val_loss: 0.0843 - learning_rate: 2.0000e-04
+Epoch 12/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 0s 201ms/step - accuracy: 0.9740 - loss: 0.0854
+Epoch 12: ReduceLROnPlateau reducing learning rate to 0.0001.
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 230ms/step - accuracy: 0.9708 - loss: 0.0938 - val_accuracy: 0.9683 - val_loss: 0.1150 - learning_rate: 2.0000e-04
+Epoch 13/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 230ms/step - accuracy: 0.9720 - loss: 0.0844 - val_accuracy: 0.9854 - val_loss: 0.0806 - learning_rate: 1.0000e-04
+Epoch 14/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 231ms/step - accuracy: 0.9726 - loss: 0.0761 - val_accuracy: 0.9854 - val_loss: 0.0743 - learning_rate: 1.0000e-04
+Epoch 15/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 14s 244ms/step - accuracy: 0.9751 - loss: 0.0751 - val_accuracy: 0.9927 - val_loss: 0.0513 - learning_rate: 1.0000e-04
+Epoch 16/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 13s 232ms/step - accuracy: 0.9714 - loss: 0.0785 - val_accuracy: 0.9902 - val_loss: 0.0735 - learning_rate: 1.0000e-04
+Epoch 17/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 14s 240ms/step - accuracy: 0.9732 - loss: 0.0704 - val_accuracy: 0.9854 - val_loss: 0.0736 - learning_rate: 1.0000e-04
+Epoch 18/30
+52/52 ━━━━━━━━━━━━━━━━━━━━ 14s 247ms/step - accuracy: 0.9732 - loss: 0.0738 - val_accuracy: 0.9902 - val_loss: 0.0642 - learning_rate: 1.0000e-04
+Epoch 18: early stopping
+Restoring model weights from the end of the best epoch: 10.
+Training completed! Best val_accuracy: 99.5%
+Model saved successfully!
+Final Results:
+- Best validation accuracy: 99.5%
+- Training stopped at epoch: 18
+- Total parameters: 6,647,492
